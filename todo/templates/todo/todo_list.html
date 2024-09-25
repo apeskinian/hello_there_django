@@ -11,9 +11,9 @@
         {% for item in items %}
             <tr>
                 {% if item.done %}
-                    <td><strike>{{ item.name }}</strike></td>
+                    <td><strike>{{ item.name }}</strike>&nbsp&nbsp</td>
                 {% else %}
-                    <td>{{ item.name }}</td>
+                    <td>{{ item.name }}&nbsp&nbsp</td>
                 {% endif %}
                     <td>
                         <a href="/toggle/{{ item.id }}">
@@ -35,6 +35,7 @@
             <tr><td>You have nothing to do.</td></tr>
         {% endfor %}
     </table>
+    <br>
     <a href="/add">Add an Item</a>
 </body>
 </html>
